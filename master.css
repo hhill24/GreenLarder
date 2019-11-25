@@ -1,0 +1,164 @@
+/* This css file deals with the header, mostly the navigation bar */
+
+/* deals with the animation of the hamburger icon */
+.animated-icon{
+width: 30px;
+height: 20px;
+position: relative;
+margin: 0px;
+transform: rotate(0deg);
+transition: .5s ease-in-out;
+cursor: pointer;
+}
+
+/* deals with the animation of the hamburger icon */
+.animated-icon span{
+display: block;
+position: absolute;
+height: 3px;
+width: 100%;
+border-radius: 9px;
+opacity: 1;
+left: 0;
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+}
+
+/* changes the background colour of the hamburger icon */
+.animated-icon span {
+background: #ffffff;
+}
+
+/* Placement of the first bar on the hamburger icon */
+.animated-icon span:nth-child(1) {
+top: 0px;
+}
+
+/* Placement of the second bar on the hamburger icon */
+.animated-icon span:nth-child(2), .animated-icon span:nth-child(3) {
+top: 10px;
+}
+
+/* Placement of the third bar on the hamburger icon */
+.animated-icon span:nth-child(4) {
+top: 20px;
+}
+
+/* deals with with placement of the first line on the hamburger when it opens */
+.animated-icon.open span:nth-child(1) {
+top: 11px;
+width: 0%;
+left: 50%;
+}
+
+/* deals with with placement of the second line on the hamburger when it opens */
+.animated-icon.open span:nth-child(2) {
+transform: rotate(45deg);
+}
+
+/* deals with with placement of the third line on the hamburger when it opens */
+.animated-icon.open span:nth-child(3) {
+transform: rotate(-45deg);
+}
+
+/* deals with with placement of the fourth line on the hamburger when it opens */
+.animated-icon.open span:nth-child(4) {
+top: 11px;
+width: 0%;
+left: 50%;
+}
+
+/* Deals with the background colour of the navigation bar and the distance from the top */
+nav{
+  background: #049861;
+}
+
+/* deals with the title in the navigation bar */
+.navbar-title{
+  color: #ffffff;
+}
+
+/* what happens when hovering over the title inside the navigation bar */
+.navbar-title:hover{
+  color: #ffffff;
+}
+
+/* deals with the placement of the image inside the header */
+.headerImage {
+  width:100%;
+  height:500px;
+  background: url('images/hill.jpg');
+  background-position: bottom;
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+/* deals with the geen line after the first image */
+.fullLine{
+  background: #049861;
+  max-height: 40px;
+
+}
+
+/* deals with the text within the green line */
+.fullLine p{
+  color: #ffffff;
+  text-align: center;
+}
+
+/* deals with the footer */
+.page-footer{
+  margin-top: 15px;
+  color: #ffffff;
+  background: #049861;
+}
+
+/* deals with the little copyright area in the footer */
+.footer-copyright{
+  background: #037f51;
+  color: #ffffff;
+}
+
+/* changes footer colour to white */
+.footer-copyright .sub-footer-text{
+  color: #ffffff;
+}
+
+/* changes footer link colour to white when hovering over*/
+.footer-copyright:hover{
+  color: #ffffff;
+}
+
+/* deals with the title in the text area */
+.row-title h1{
+  text-align: center;
+}
+
+/* deals with the paragraph in the text area */
+.row-title p{
+  text-align: left;
+  font-size: 24px;
+}
+
+/* deals with the map card */
+.map-card{
+  width: 100%;
+  height: auto;
+}
+
+/* deals with the card title */
+.map-title{
+  text-align: center;
+}
+
+/* deals with the image inside the card contained inside content*/
+.card-image{
+  max-width: 100%;
+  max-height: 600px;
+}
+
+/* deals wiht the image inside the first row */
+.img{
+  max-height: 550px;
+  width: 100%;
+}
