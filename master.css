@@ -1,5 +1,6 @@
 /* This css file deals with the header, mostly the navigation bar */
 
+/* NAVIGATION CSS */
 /* deals with the animation of the hamburger icon */
 .animated-icon{
 width: 30px;
@@ -82,83 +83,102 @@ nav{
 .navbar-title:hover{
   color: #ffffff;
 }
+/* END OF NAVIGATION CSS */
 
 /* deals with the placement of the image inside the header */
-.headerImage {
-  width:100%;
-  height:500px;
-  background: url('images/hill.jpg');
-  background-position: bottom;
-  background-size:cover;
-  background-attachment: fixed;
+video{
+  width: 100%;
+}
+/* END OF HEADER CSS */
+
+/* MAIN CONTENT CSS */
+#first-content{
+  margin-top: 25px;
 }
 
-/* deals with the geen line after the first image */
-.fullLine{
-  background: #049861;
-  max-height: 40px;
-
+/* deals with the map */
+#map-box{
+  height: 500px;
 }
 
-/* deals with the text within the green line */
-.fullLine p{
-  color: #ffffff;
-  text-align: center;
+/* deals wiht the map */
+#map {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   width: 100%;
 }
 
-/* deals with the footer */
-.page-footer{
-  margin-top: 15px;
-  color: #ffffff;
-  background: #049861;
+/* deals witht the text within content */
+.content-text{
+  padding-left: 25px;
 }
 
-/* deals with the little copyright area in the footer */
-.footer-copyright{
-  background: #037f51;
-  color: #ffffff;
+/* deals with the heading within content */
+.content-text h1{
+  text-transform: uppercase;
 }
 
-/* changes footer colour to white */
-.footer-copyright .sub-footer-text{
-  color: #ffffff;
-}
-
-/* changes footer link colour to white when hovering over*/
-.footer-copyright:hover{
-  color: #ffffff;
-}
-
-/* deals with the title in the text area */
-.row-title h1{
-  text-align: center;
-}
-
-/* deals with the paragraph in the text area */
-.row-title p{
+/* deals with the paragraph within content */
+.content-text p{
   text-align: left;
-  font-size: 24px;
+  font-size: 30px;
 }
 
-/* deals with the map card */
-.map-card{
-  width: 100%;
-  height: auto;
+/* END OF MAIN CONTENT CSS */
+
+/* FOOTER CSS */
+/* deals with the footer */
+#page-footer{
+  background: #049861;
+  margin-top: 5px;
 }
 
-/* deals with the card title */
-.map-title{
-  text-align: center;
+/* deals with footer list style  */
+footer ul{
+  list-style: none;
 }
 
-/* deals with the image inside the card contained inside content*/
-.card-image{
-  max-width: 100%;
-  max-height: 600px;
+/* deals with the different page links in the header */
+footer a{
+  color: #ffffff;
 }
 
-/* deals wiht the image inside the first row */
-.img{
-  max-height: 550px;
-  width: 100%;
+/* deals witht ath happens when you hover over footer list */
+ul li a:hover{
+  color: #ffffff;
 }
+
+/* deals witht the headings inside the footer */
+.col-heading {
+  font-size: 25px;
+  text-transform: uppercase;
+  color:#ffffff;
+  font-weight: 500;
+  margin: 10px 0;
+  padding: 4px 0px;
+  border-bottom: 1px solid #ffffff;
+  letter-spacing: 3px;
+}
+
+/* deals with the small copyright text in the small footer */
+#bottom-footer {
+  color: #ffffff;
+  margin-top: 20px;
+  padding-top: 3px;
+  background: #037f51;
+}
+
+/* deals with thr small text under the footer on the left */
+.vertical-links li {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+/* deals with thr small text under the footer on the left */
+.vertical-links li a {
+  color: #ffffff;
+  font-weight: 400;
+  margin-left: 10px;
+}
+/* END OF FOOTER CSS */

@@ -8,6 +8,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- mapbox css-->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- favicon and external css -->
     <link rel="icon" href="images\favicon.jpg">
     <link rel="stylesheet" href="master.css">
 
@@ -47,92 +51,139 @@
       </div>
     </nav>
 
-
-<div class="headerImage" >
-</div>
-    <!-- Green line to seperate the image from the rest -->
-   <div class="fullLine">
-     <p> Filler text</p>
-   </div>
+    <!-- header video loop -->
+  <section>
+    <video class="view intro-video" autoplay muted loop>
+      <source src="images\GreenVideo.mp4" type="video/mp4">
+    </video>
+</section>
 
 </header>
 
 <!--Content-->
 <content>
 
-  <!-- main content of the page, first row -->
-  <div class="container-fluid">
+<section>
+  <div class="container-fluid" id="first-content">
     <div class="row">
-      <div class="col-10 col-md-7 ">
-        <div class="row-title">
-          <h1> TITLE </h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse imperdiet, augue eget ultricies porta, enim risus ultrices sapien, id accumsan enim enim nec orci. Praesent in ligula faucibus, ultrices odio quis, aliquam mi. Nam aliquet mi vitae odio aliquet iaculis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut purus lectus. Nam feugiat ante vitae nunc varius, nec aliquet nunc fermentum. Vivamus malesuada id tortor quis
-          pharetra. Nam non sem faucibus, auctor arcu non, efficitur nibh. Sed tristique massa at tellus tristique, vitae rhoncus nisl faucibus. Maecenas luctus ex nec volutpat pharetra. Vestibulum id laoreet enim. Nullam lacus lacus, mollis non tempus et, rutrum et ligula. Nullam at sapien metus.</p>
-
+      <div class="col-sm-4" id="map-box">
+        <div id="map"></div>
+    </div>
+      <div class="col-sm-8">
+        <div class="content-text">
+          <h1>Lorem Ipsum</h1>
+          <P>Nulla ex augue, pulvinar vel tincidunt nec, viverra egestas est. Phasellus blandit magna purus, quis luctus est mollis in. Integer congue feugiat turpis. Proin eget ullamcorper nibh, eu hendrerit odio. Sed efficitur, velit eu suscipit vulputate, risus nulla finibus ex, quis blandit lorem dolor eu nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta lacinia mi, in pulvinar mi tempus at. Duis a magna non enim molestie interdum. Pellentesque non lacus turpis. Aenean placerat purus non augue tincidunt porttitor. Integer iaculis cursus purus, at elementum ante condimentum vel. Suspendisse pretium egestas felis sit amet malesuada. Praesent vel pharetra justo.</P>
         </div>
       </div>
 
-      <div class="col-8 col-md-5">
-        <!-- creates a card to hold the map -->
-        <div class="map-card">
-          <img class="card-image" src="https://picsum.photos/id/1006/3000/2000" alt="Card image cap">
-          <div class="map-text">
-            <h5 class="map-title">Map title</h5>
-            <p class="map-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse imperdiet, augue eget ultricies porta, enim risus ultrices sapien, id accumsan enim enim nec orci.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-fluid" id="first-content">
+    <div class="row">
+      <div class="col-sm-4">
+        <div>
+          <div class="content-text">
+            <h3>Map of zero waste loaction in Dundee City </h3>
           </div>
         </div>
       </div>
-    </div>
-
-  <!-- main content of the page, second row -->
-    <div class="row">
-      <div class="col-10 col-md-7 ">
-          <img class="img" src="https://picsum.photos/id/1006/3000/2000">
-      </div>
-
-      <div class="col-8 col-md-5">
-        <div class="row-title">
-          <h1> TITLE </h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse imperdiet, augue eget ultricies porta, enim risus ultrices sapien, id accumsan enim enim nec orci. Praesent in ligula faucibus, ultrices odio quis, aliquam mi. Nam aliquet mi vitae odio aliquet iaculis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut purus lectus. Nam feugiat ante vitae nunc varius, nec aliquet nunc fermentum. Vivamus malesuada id tortor quis
-          pharetra. Nam non sem faucibus, auctor arcu non, efficitur nibh. Sed tristique massa at tellus tristique, vitae rhoncus nisl faucibus. Maecenas luctus ex nec volutpat pharetra. Vestibulum id laoreet enim. Nullam lacus lacus, mollis non tempus et, rutrum et ligula. Nullam at sapien metus.</p>
+      <div class="col-sm-8">
+        <div class="content-text">
+          <h2>Map of zero waste loaction in Dundee City </h2>
         </div>
       </div>
+
     </div>
   </div>
-</div>
+</section>
 
-<!-- just add more rows as you please in whatever orientation  -->
+
+
+
+
+
 
 </content>
 
-<!-- Footer -->
-<footer class="page-footer font-small teal pt-4">
+<!-- footer -->
+<footer>
+<div class="container-fluid" id="page-footer">
 
-  <!-- Footer Text -->
-  <div class="container-fluid text-center text-md-left">
+    <!-- first row of the footer with links -->
     <div class="row">
-      <div class="col-md-6 mt-md-0 mt-3">
-        <h5 class="text-uppercase font-weight-bold">Filler Text</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare erat et mauris viverra, nec condimentum nisi varius. Fusce efficitur quam at nulla blandit dignissim. Nullam commodo, ligula et mollis varius, tellus nisi pharetra sem, mollis convallis diam sapien nec nisi. Nullam aliquam at nunc a ullamcorper. Cras at mi eu quam interdum mollis non ac odio. Etiam ullamcorper scelerisque felis, at lacinia urna congue eget. In tincidunt est sapien, eget convallis ipsum faucibus sit amet. Praesent a felis quis sem viverra semper. In ac tellus id metus feugiat auctor. Sed at ligula ac sapien auctor interdum a non augue. Praesent ut massa gravida, porttitor diam nec, viverra ex. Praesent eget consectetur massa.</p>
+      <div class="col-xs-12 col-sm-6 col-md-3" >
+        <ul>
+          <li class="col-heading">Heading 1</li>
+          <li><a href="#">Phone Number here</a></li>
+          <li><a href="#">Address Here</a></li>
+          <li><a href="#">Email here</a></li>
+        </ul>
       </div>
-      <div class="col-md-6 mb-md-0 mb-3">
-        <h5 class="text-uppercase font-weight-bold">Filler Text</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare erat et mauris viverra, nec condimentum nisi varius. Fusce efficitur quam at nulla blandit dignissim. Nullam commodo, ligula et mollis varius, tellus nisi pharetra sem, mollis convallis diam sapien nec nisi. Nullam aliquam at nunc a ullamcorper. Cras at mi eu quam interdum mollis non ac odio. Etiam ullamcorper scelerisque felis, at lacinia urna congue eget. In tincidunt est sapien, eget convallis ipsum faucibus sit amet. Praesent a felis quis sem viverra semper. In ac tellus id metus feugiat auctor. Sed at ligula ac sapien auctor interdum a non augue. Praesent ut massa gravida, porttitor diam nec, viverra ex. Praesent eget consectetur massa.</p>
+
+      <!-- second row of the footer with links -->
+      <div class="col-xs-12 col-sm-6 col-md-3" >
+        <ul>
+          <li class="col-heading">Heading 2</li>
+          <li><a href="#">Link to page</a></li>
+          <li><a href="#">Link to page</a></li>
+          <li><a href="#">Link to page</a></li>
+          <li><a href="#">Link to page</a></li>
+        </ul>
+      </div>
+
+      <!-- third row of the footer with links -->
+      <div class="col-xs-12 col-sm-6 col-md-3" >
+        <ul>
+          <li class="col-heading">Heading 3</li>
+          <li><a href="#">Link to page</a></li>
+          <li><a href="#">Link to page</a></li>
+          <li><a href="#">Link to page</a></li>
+          <li><a href="#">Link to page</a></li>
+        </ul>
+      </div>
+
+      <!-- fourth row of the footer with links -->
+      <div class="col-xs-12 col-sm-6 col-md-3" >
+        <ul>
+          <li class="col-heading">Heading 4</li>
+          <li><a href="#">Link to page</a></li>
+          <li><a href="#">Link to page</a></li>
+          <li><a href="#">Link to page</a></li>
+          <li><a href="#">Link to page</a></li>
+        </ul>
       </div>
     </div>
+
+    <!-- little text under the footer -->
+    <div class="row row-no-gutters" id="bottom-footer" >
+      <div class="col-xs-12 col-md-5 text-center" >
+          <ul class="vertical-links small">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+      </div>
+
+      <!-- little text under the footer -->
+      <div class="col-xs-12 col-md-5 text-center" >
+        <ul>
+          <li class="small">© Copyright 2019 Website by <a href="#" style="color:white;font-weight:500;">Group 7</a>. All Rights reserved.</li>
+        </ul>
+      </div>
+
+    </div>
   </div>
+<footer>
 
-  <!-- Copyright - fill this in if we are going to bother with copyright -->
-  <div class="footer-copyright text-center py-3">Copyright text here
-    <a class="sub-footer-text" href="#">Link to ownership </a>
-  </div>
-
-</footer>
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS, then external java script-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, mapbox js and then external java script-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
     <script src="scripts.js"></script>
   </body>
 </html>
