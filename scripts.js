@@ -38,7 +38,117 @@ map.addLayer({
   "type": "symbol",
   "source": {
     "type": "geojson",
-    "data": "donation.geojson"
+    "data": {
+      "type": "FeatureCollection",
+      "features": [{
+        // feature for Mapbox DC
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates":  [-2.992215, 56.455924]
+        },
+        "properties": {
+        "title": "Little Green Larder",
+        "icon": "convenience"
+        }
+      },
+      {
+      // feature for Mapbox SF
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.967291, 56.461085]
+        },
+      "properties": {
+        "title": "Birchwood Food Emporium",
+        "icon": "cafe"
+      }
+      },
+      {
+      // feature for Mapbox SF
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates":  [-2.968890, 56.462627]
+        },
+      "properties": {
+        "title": "British Heart Foundation",
+        "icon": "convenience"
+      }
+    },
+    {
+      // feature for Mapbox SF
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.971008,56.459653]
+        },
+      "properties": {
+        "title": "Cex",
+        "icon": "convenience"
+      }
+    },
+    {
+      // feature for Mapbox SF
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.984325,56.462316]
+        },
+      "properties": {
+        "title": "SCRAPantics",
+        "icon": "convenience"
+      }
+    },
+    {
+      // feature for Mapbox SF
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.970830,56.463168]
+        },
+      "properties": {
+        "title": "BrewDog Dundee",
+        "icon": "cafe"
+      }
+      },
+      {
+        // feature for Mapbox SF
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-2.980284, 56.474693]
+          },
+        "properties": {
+          "title": "Sense Scotland",
+          "icon": "convenience"
+        }
+        },
+        {
+          // feature for Mapbox SF
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-2.970903,56.464804]
+            },
+          "properties": {
+            "title": "Transform Furniture Store",
+            "icon": "convenience"
+          }
+          },
+          {
+            // feature for Mapbox SF
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-2.985597, 56.462523]
+              },
+            "properties": {
+              "title": "Tayside Re-User",
+              "icon": "convenience"
+            }
+            }]
+    }
   },
   "layout": {
     // get the icon name from the source's "icon" property
