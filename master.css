@@ -155,10 +155,10 @@ header .overlay {
    width: 100%;
 }
 #donationMap {
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   width: 100%;
+position: absolute;
+top: 0;
+bottom: 0;
+width: 100%;
 }
 /* deals witht the text within content */
 .content-text{
