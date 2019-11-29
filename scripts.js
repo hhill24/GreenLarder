@@ -165,7 +165,7 @@ map.addLayer({
 
 //create a new map showing only donation sites
 var donationMap = new mapboxgl.Map({
-  container: 'map', // container id
+  container: 'donationMap', // container id
   style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
   center: [-2.970721, 56.462018], // starting position [lng, lat]
   zoom: 13 // starting zoom
