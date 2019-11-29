@@ -163,6 +163,113 @@ map.addLayer({
 });
 });
 
+//create a new map showing only donation sites
+var donationMap = new mapboxgl.Map({
+  container: 'map', // container id
+  style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+  center: [-2.970721, 56.462018], // starting position [lng, lat]
+  zoom: 13 // starting zoom
+});
+
+//disables the ability to zoom in and out the map while scrolling
+donationMap.scrollZoom.disable();
+//adds the zoom in and out controls
+donationMap.addControl(new mapboxgl.NavigationControl());
+
+//adds the ability for the user to see their location
+donationMap.addControl(new mapboxgl.GeolocateControl({
+positionOptions: {
+enableHighAccuracy: true
+},
+trackUserLocation: true
+}));
+
+//allows the user to put the map into fullscreen mode
+donationMap.addControl(new mapboxgl.FullscreenControl());
+map.on('load', function () {
+map.addLayer({
+  "id": "points",
+  "type": "symbol",
+  "source": {
+    "type": "geojson",
+    "data": {
+      "type": "FeatureCollection",
+      "features": [{
+        // feature for Mapbox DC
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates":  [-2.985125, 56.462691]
+        },
+        "properties": {
+        "title": "Tayside Reusers",
+        "icon": "marker"
+        }
+      },
+      {
+      // feature for Mapbox SF
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.99225, 56.455878]
+        },
+      "properties": {
+        "title": "Shelter",
+        "icon": "marker"
+      }
+      },
+      {
+      // feature for Mapbox SF
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates":  [-2.97124,56.461677]
+        },
+      "properties": {
+        "title": "Oxfam Books & Music",
+        "icon": "marker"
+      }
+    },
+                   {
+      // feature for Mapbox SF
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates":  [-2.970844,56.4608]
+        },
+      "properties": {
+        "title": "Chest Heart & Stroke Scotland",
+        "icon": "marker"
+      }
+    },
+    {
+      // feature for Mapbox SF
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.971008,56.459653]
+        },
+      "properties": {
+        "title": "Cex",
+        "icon": "marker"
+      }
+    }]
+    }
+  },
+  "layout": {
+    // get the icon name from the source's "icon" property
+    // concatenate the name to get an icon from the style's sprite sheet
+    "icon-image": ["concat", ["get", "icon"], "-15"],
+    // get the title name from the source's "title" property
+    "text-field": ["get", "title"],
+    "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+    "text-offset": [0, 0.6],
+    "text-anchor": "top"
+  }
+});
+});
+
+
 let deferredPrompt;
     window.addEventListener('beforeinstallprompt', event => {
 
