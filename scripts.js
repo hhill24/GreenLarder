@@ -163,7 +163,6 @@ map.addLayer({
 });
 });
 
-//create a new map showing only donation sites
 var donationMap = new mapboxgl.Map({
   container: 'donationMap', // container id
   style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
@@ -186,6 +185,8 @@ trackUserLocation: true
 
 //allows the user to put the map into fullscreen mode
 donationMap.addControl(new mapboxgl.FullscreenControl());
+
+//loads this on the map
 donationMap.on('load', function () {
 donationMap.addLayer({
   "id": "points",
@@ -199,10 +200,10 @@ donationMap.addLayer({
         "type": "Feature",
         "geometry": {
           "type": "Point",
-          "coordinates":  [-2.985125, 56.462691]
+          "coordinates":  [-2.992215, 56.455924]
         },
         "properties": {
-        "title": "Tayside Reusers",
+        "title": "Little Green Larder",
         "icon": "convenience"
         }
       },
@@ -211,11 +212,11 @@ donationMap.addLayer({
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [-2.99225, 56.455878]
+        "coordinates": [-2.967291, 56.461085]
         },
       "properties": {
-        "title": "Shelter",
-        "icon": "convenience"
+        "title": "Birchwood Food Emporium",
+        "icon": "cafe"
       }
       },
       {
@@ -223,22 +224,10 @@ donationMap.addLayer({
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates":  [-2.97124,56.461677]
+        "coordinates":  [-2.968890, 56.462627]
         },
       "properties": {
-        "title": "Oxfam Books & Music",
-        "icon": "convenience"
-      }
-    },
-                   {
-      // feature for Mapbox SF
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates":  [-2.970844,56.4608]
-        },
-      "properties": {
-        "title": "Chest Heart & Stroke Scotland",
+        "title": "British Heart Foundation",
         "icon": "convenience"
       }
     },
@@ -253,7 +242,67 @@ donationMap.addLayer({
         "title": "Cex",
         "icon": "convenience"
       }
-    }]
+    },
+    {
+      // feature for Mapbox SF
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.984325,56.462316]
+        },
+      "properties": {
+        "title": "SCRAPantics",
+        "icon": "convenience"
+      }
+    },
+    {
+      // feature for Mapbox SF
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.970830,56.463168]
+        },
+      "properties": {
+        "title": "BrewDog Dundee",
+        "icon": "cafe"
+      }
+      },
+      {
+        // feature for Mapbox SF
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-2.980284, 56.474693]
+          },
+        "properties": {
+          "title": "Sense Scotland",
+          "icon": "convenience"
+        }
+        },
+        {
+          // feature for Mapbox SF
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-2.970903,56.464804]
+            },
+          "properties": {
+            "title": "Transform Furniture Store",
+            "icon": "convenience"
+          }
+          },
+          {
+            // feature for Mapbox SF
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-2.985597, 56.462523]
+              },
+            "properties": {
+              "title": "Tayside Re-User",
+              "icon": "convenience"
+            }
+            }]
     }
   },
   "layout": {
@@ -268,6 +317,7 @@ donationMap.addLayer({
   }
 });
 });
+
 
 
 let deferredPrompt;
