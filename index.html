@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
 
-    <link rel="manifest" href="manifest.json">
+
 
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -41,7 +41,7 @@
 
 
     <!-- manifest -->
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <!-- favicon and external css -->
     <link rel="icon" href="images\favicon.jpg">
     <link rel="stylesheet" href="master.css">
@@ -192,7 +192,9 @@
     <div class="row">
       <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
         <div class="embed-responsive embed-responsive-21by9"  id="video-content">
-          <iframe class="embed-responsive-item" src="images\Resource Efficient Scotland.mp4"></iframe>
+          <video width="320" height="240" controls>
+              <source src="images\Resource Efficient Scotland.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
 
@@ -205,34 +207,6 @@
     </div>
   </div>
 </section>
-
-
-<!DOCTYPE html>
-
-<head>
-  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js"></script>
-  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css" rel="stylesheet" />
-  <style>
-    body { margin:0; padding:0; }
-    #map { position:absolute; top:0; bottom:0; width:100%; }
-  </style>
-</head>
-
-<!--
-  <script>
-mapboxgl.accessToken = "undefined";
-
-/* Map: This represents the map on the page. */
-var map = new mapboxgl.Map({
-  container: "map",
-  style: "mapbox://styles/mapbox/outdoors-v11",
-  zoom: 13.32,
-  center: [-3.0039,56.4597]
-});
-
-
-  </script> -->
-
 
 </content>
 
