@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
 
-    <link rel="manifest" href="manifest.json">
+
 
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -41,7 +41,7 @@
 
 
     <!-- manifest -->
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <!-- favicon and external css -->
     <link rel="icon" href="images\favicon.jpg">
     <link rel="stylesheet" href="master.css">
@@ -75,13 +75,24 @@
         <!-- Links between pages-->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+
+            <a class="nav-link" href="index.html">Homepage<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="DonationSites.html">Donation Sites</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Vintage.html">Vintage and Secondhand Shops</a>
+            <a class="nav-link" href="#">Recipes</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="Vintage.html">Vintage and Secondhand Shops</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Forms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+
           </li>
         </ul>
       </div>
@@ -192,7 +203,9 @@
     <div class="row">
       <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
         <div class="embed-responsive embed-responsive-21by9"  id="video-content">
-          <iframe class="embed-responsive-item" src="images\Resource Efficient Scotland.mp4"></iframe>
+          <video width="320" height="240" controls>
+              <source src="images\Resource Efficient Scotland.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
 
@@ -206,34 +219,6 @@
   </div>
 </section>
 
-
-<!DOCTYPE html>
-
-<head>
-  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js"></script>
-  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css" rel="stylesheet" />
-  <style>
-    body { margin:0; padding:0; }
-    #map { position:absolute; top:0; bottom:0; width:100%; }
-  </style>
-</head>
-
-<!--
-  <script>
-mapboxgl.accessToken = "undefined";
-
-/* Map: This represents the map on the page. */
-var map = new mapboxgl.Map({
-  container: "map",
-  style: "mapbox://styles/mapbox/outdoors-v11",
-  zoom: 13.32,
-  center: [-3.0039,56.4597]
-});
-
-
-  </script> -->
-
-
 </content>
 
 <!-- footer -->
@@ -244,10 +229,10 @@ var map = new mapboxgl.Map({
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-3" >
         <ul>
-          <li class="col-heading">Heading 1</li>
+          <li class="col-heading">Contact</li>
           <li><a href="#">Phone Number here</a></li>
-          <li><a href="#">Address Here</a></li>
-          <li><a href="#">Email here</a></li>
+          <li><a href="#">272 Perth Road Dundee</a></li>
+          <li><a href="https://www.facebook.com/pg/thelittlegreenlarder/about/?ref=page_internal">Facebook page</a></li>
         </ul>
       </div>
 
