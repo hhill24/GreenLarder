@@ -186,8 +186,8 @@ trackUserLocation: true
 
 //allows the user to put the map into fullscreen mode
 donationMap.addControl(new mapboxgl.FullscreenControl());
-map.on('load', function () {
-map.addLayer({
+donationMap.on('load', function () {
+donationMap.addLayer({
   "id": "points",
   "type": "symbol",
   "source": {
