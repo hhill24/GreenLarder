@@ -1,0 +1,48 @@
+{
+  "type": "FeatureCollection",
+  "features": [{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.985125, 56.462691]
+      },
+      "properties": {
+        "title": "Tayside Reusers",
+        "icon": "shop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.99225, 56.455878]
+      },
+      "properties": {
+        "title": "Shelter",
+        "icon": "shop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.970844,56.4608]
+      },
+      "properties": {
+        "title": "CHSS",
+        "icon": "shop"
+      }
+    },
+               {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.97124,56.461677]
+      },
+      "properties": {
+        "title": "Oxfam Books&Music",
+        "icon": "shop"
+      }
+    }
+  ]
+}
