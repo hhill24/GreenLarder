@@ -203,7 +203,7 @@ donationMap.addLayer({
         },
         "properties": {
         "title": "Tayside Reusers",
-        "icon": "marker"
+        "icon": "convenience"
         }
       },
       {
@@ -215,7 +215,7 @@ donationMap.addLayer({
         },
       "properties": {
         "title": "Shelter",
-        "icon": "marker"
+        "icon": "convenience"
       }
       },
       {
@@ -227,7 +227,7 @@ donationMap.addLayer({
         },
       "properties": {
         "title": "Oxfam Books & Music",
-        "icon": "marker"
+        "icon": "convenience"
       }
     },
                    {
@@ -239,7 +239,7 @@ donationMap.addLayer({
         },
       "properties": {
         "title": "Chest Heart & Stroke Scotland",
-        "icon": "marker"
+        "icon": "convenience"
       }
     },
     {
@@ -251,7 +251,7 @@ donationMap.addLayer({
         },
       "properties": {
         "title": "Cex",
-        "icon": "marker"
+        "icon": "convenience"
       }
     }]
     }
