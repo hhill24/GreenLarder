@@ -163,6 +163,9 @@ map.addLayer({
 });
 });
 
+
+
+
 let deferredPrompt;
     window.addEventListener('beforeinstallprompt', event => {
 
