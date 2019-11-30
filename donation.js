@@ -45,10 +45,10 @@ map.addLayer({
         "type": "Feature",
         "geometry": {
           "type": "Point",
-          "coordinates":  [-2.992215, 56.455924]
+          "coordinates":  [-2.985125, 56.462691]
         },
         "properties": {
-        "title": "Little Green Larder",
+        "title": "Tayside Reusers",
         "icon": "convenience"
         }
       },
@@ -57,10 +57,10 @@ map.addLayer({
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [-2.967291, 56.461085]
+        "coordinates": [-2.99225, 56.455878]
         },
       "properties": {
-        "title": "Birchwood Food Emporium",
+        "title": "Shelter",
         "icon": "cafe"
       }
       },
@@ -72,7 +72,7 @@ map.addLayer({
         "coordinates":  [-2.968890, 56.462627]
         },
       "properties": {
-        "title": "British Heart Foundation",
+        "title": "Oxfam Books & Music",
         "icon": "convenience"
       }
     },
@@ -93,61 +93,14 @@ map.addLayer({
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [-2.984325,56.462316]
+        "coordinates": [-2.970844,56.4608]
         },
       "properties": {
-        "title": "SCRAPantics",
+        "title": "CHSS",
         "icon": "convenience"
       }
-    },
-    {
-      // feature for Mapbox SF
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-2.970830,56.463168]
-        },
-      "properties": {
-        "title": "BrewDog Dundee",
-        "icon": "cafe"
-      }
-      },
-      {
-        // feature for Mapbox SF
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-2.980284, 56.474693]
-          },
-        "properties": {
-          "title": "Sense Scotland",
-          "icon": "convenience"
-        }
-        },
-        {
-          // feature for Mapbox SF
-          "type": "Feature",
-          "geometry": {
-            "type": "Point",
-            "coordinates": [-2.970903,56.464804]
-            },
-          "properties": {
-            "title": "Transform Furniture Store",
-            "icon": "convenience"
-          }
-          },
-          {
-            // feature for Mapbox SF
-            "type": "Feature",
-            "geometry": {
-              "type": "Point",
-              "coordinates": [-2.985597, 56.462523]
-              },
-            "properties": {
-              "title": "Tayside Re-User",
-              "icon": "convenience"
-            }
-            }]
+    }
+    ]
     }
   },
   "layout": {
@@ -162,3 +115,37 @@ map.addLayer({
   }
 });
 });
+
+
+
+
+let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', event => {
+
+      // Prevent Chrome 67 and earlier from automatically showing the prompt
+      event.preventDefault();
+
+      // Stash the event so it can be triggered later.
+      deferredPrompt = event;
+
+      // Attach the install prompt to a user gesture
+      document.querySelector('#installBtn').addEventListener('click', event => {
+
+        // Show the prompt
+        deferredPrompt.prompt();
+
+        // Wait for the user to respond to the prompt
+        deferredPrompt.userChoice
+          .then((choiceResult) => {
+            if (choiceResult.outcome === 'accepted') {
+              console.log('User accepted the A2HS prompt');
+            } else {
+              console.log('User dismissed the A2HS prompt');
+            }
+            deferredPrompt = null;
+          });
+      });
+
+      // Update UI notify the user they can add to home screen
+      document.querySelector('#installBanner').style.display = 'flex';
+    });
