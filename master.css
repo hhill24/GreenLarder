@@ -152,7 +152,15 @@ header .overlay {
    position: absolute;
    top: 0;
    bottom: 0;
-   width: 100%;
+   width: 96%;
+}
+
+/* deals with the donation page map */
+#donationMap {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   width: 96%;
 }
 
 /* deals witht the text within content */
@@ -195,9 +203,15 @@ header .overlay {
   height: 15px;
 }
 
-/* deals with the video */
+/* deals with the little video in the index page */
 #video-content{
-  margin-top: 25px;
+  margin: 15px;
+  position: relative;
+}
+
+/* deals with the little video in the index page */
+#video-content video{
+  width: 100%;
 }
 
 /* text on top of the carousel image */
@@ -264,21 +278,3 @@ ul li a:hover{
   margin-left: 10px;
 }
 /* END OF FOOTER CSS */
-
-
-
-
-
-
-
-
-
-
-
-
-.banner {
-  align-content: center;
-  display: none;
-  justify-content: center;
-  width: 100%;
-}
