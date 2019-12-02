@@ -181,6 +181,17 @@ header .overlay {
   font-size: 28px;
 }
 
+/* aligns text to be centered when the screen size is small */
+@media only screen and (max-width: 650px) {
+  .content-text p {
+    text-align: center;
+  }
+
+  .content-text h1{
+    text-align: center;
+  }
+}
+
 /* deals with the carousel images and text */
 .carousel-item{
   width: 100%;
