@@ -215,12 +215,11 @@ header .overlay {
 
 /* deals with the little video in the index page */
 #video-content{
-  margin: 15px;
   position: relative;
 }
 
 /* deals with the little video in the index page */
-#video-content video{
+#video-content iframe{
   width: 100%;
 }
 
