@@ -1,77 +1,76 @@
-/* This css file deals with the header, mostly the navigation bar */
-
 /* changes the background colour of the body */
 body{
   background-color: #f2f2f2;
   font-family: 'Montserrat', sans-serif;
 }
+
 /* NAVIGATION CSS */
 /* deals with the animation of the hamburger icon */
 .animated-icon{
-width: 30px;
-height: 20px;
-position: relative;
-margin: 0px;
-transform: rotate(0deg);
-transition: .5s ease-in-out;
-cursor: pointer;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
 }
 
 /* deals with the animation of the hamburger icon */
-.animated-icon span{
-display: block;
-position: absolute;
-height: 3px;
-width: 100%;
-border-radius: 9px;
-opacity: 1;
-left: 0;
-transform: rotate(0deg);
-transition: .25s ease-in-out;
+  .animated-icon span{
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
 }
 
 /* changes the background colour of the hamburger icon */
-.animated-icon span {
-background: #ffffff;
+  .animated-icon span {
+  background: #ffffff;
 }
 
 /* Placement of the first bar on the hamburger icon */
-.animated-icon span:nth-child(1) {
-top: 0px;
+  .animated-icon span:nth-child(1) {
+  top: 0px;
 }
 
 /* Placement of the second bar on the hamburger icon */
-.animated-icon span:nth-child(2), .animated-icon span:nth-child(3) {
-top: 10px;
+  .animated-icon span:nth-child(2), .animated-icon span:nth-child(3) {
+  top: 10px;
 }
 
 /* Placement of the third bar on the hamburger icon */
-.animated-icon span:nth-child(4) {
-top: 20px;
+  .animated-icon span:nth-child(4) {
+  top: 20px;
 }
 
 /* deals with with placement of the first line on the hamburger when it opens */
 .animated-icon.open span:nth-child(1) {
-top: 11px;
-width: 0%;
-left: 50%;
+  top: 11px;
+  width: 0%;
+  left: 50%;
 }
 
 /* deals with with placement of the second line on the hamburger when it opens */
 .animated-icon.open span:nth-child(2) {
-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 /* deals with with placement of the third line on the hamburger when it opens */
 .animated-icon.open span:nth-child(3) {
-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 /* deals with with placement of the fourth line on the hamburger when it opens */
 .animated-icon.open span:nth-child(4) {
-top: 11px;
-width: 0%;
-left: 50%;
+  top: 11px;
+  width: 0%;
+  left: 50%;
 }
 
 /* Deals with the background colour of the navigation bar and the distance from the top */
@@ -152,7 +151,15 @@ header .overlay {
    position: absolute;
    top: 0;
    bottom: 0;
-   width: 100%;
+   width: 96%;
+}
+
+/* deals with the donation page map */
+#donationMap {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   width: 96%;
 }
 
 /* deals witht the text within content */
@@ -172,6 +179,17 @@ header .overlay {
 .content-text p{
   text-align: left;
   font-size: 28px;
+}
+
+/* aligns text to be centered when the screen size is small */
+@media only screen and (max-width: 650px) {
+  .content-text p {
+    text-align: center;
+  }
+
+  .content-text h1{
+    text-align: center;
+  }
 }
 
 /* deals with the carousel images and text */
@@ -195,9 +213,14 @@ header .overlay {
   height: 15px;
 }
 
-/* deals with the video */
+/* deals with the little video in the index page */
 #video-content{
-  margin-top: 25px;
+  position: relative;
+}
+
+/* deals with the little video in the index page */
+#video-content iframe{
+  width: 100%;
 }
 
 /* text on top of the carousel image */
@@ -264,21 +287,3 @@ ul li a:hover{
   margin-left: 10px;
 }
 /* END OF FOOTER CSS */
-
-
-
-
-
-
-
-
-
-
-
-
-.banner {
-  align-content: center;
-  display: none;
-  justify-content: center;
-  width: 100%;
-}
