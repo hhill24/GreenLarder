@@ -164,7 +164,8 @@ map.addLayer({
 });
 
 
-// this changes the quote and the person who wrote that quote every 10 seconds
+// This changes the quote and the person who wrote that quote every ten seconds
+// The different qutoes and people names are stored in two different arrays
 var text = ["I only feel angry when I see waste. When I see people throwing away things we could use.",
             "Unless someone like you cares a whole awful lot, Nothing is going to get better. It’s not.",
             "The Earth is what we all have in common.",
@@ -186,6 +187,5 @@ function change() {
   counter++;
   if (counter >= text.length) {
     counter = 0;
-    // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
   }
 }
