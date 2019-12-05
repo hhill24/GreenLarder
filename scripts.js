@@ -162,3 +162,30 @@ map.addLayer({
   }
 });
 });
+
+
+// This changes the quote and the person who wrote that quote every ten seconds
+// The different qutoes and people names are stored in two different arrays
+var text = ["I only feel angry when I see waste. When I see people throwing away things we could use.",
+            "Unless someone like you cares a whole awful lot, Nothing is going to get better. It’s not.",
+            "The Earth is what we all have in common.",
+            "Small acts, when multiplied by millions of people, can transform the world."];
+
+var text2 = ["— Mother Teresa",
+            "— Dr. Seuss, The Lorax",
+            "— Wendell Berry",
+            "— Unknown"];
+
+var counter = 0;
+var elem = document.getElementById("changeText");
+var elem2 = document.getElementById("changePerson");
+var inst = setInterval(change, 10000);
+
+function change() {
+  elem.innerHTML = text[counter];
+  elem2.innerHTML = text2[counter];
+  counter++;
+  if (counter >= text.length) {
+    counter = 0;
+  }
+}
