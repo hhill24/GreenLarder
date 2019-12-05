@@ -49,7 +49,8 @@ map.addLayer({
         },
         "properties": {
         "title": "Clepington Antiques",
-        "icon": "convenience"
+        "icon": "convenience",
+          "description":"Antiques and collectables in Dundee city. See more about the store on their <a href=\"http://clepingtonacc.com/\" target=\"_blank\" title=\"Opens in a new window\">website</a>"
         }
       },
       {
@@ -61,7 +62,8 @@ map.addLayer({
         },
       "properties": {
         "title": "Tilted Duck",
-        "icon": "convenience"
+        "icon": "convenience",
+          "description":"Hot vintage and cool collectibles. See more about the store on their <a href=\"https://tiltedduck.co.uk/\" target=\"_blank\" title=\"Opens in a new window\">website</a> or check out their online <a href=\"https://www.etsy.com/uk/shop/TiltedDuck\" target=\"_blank\" title=\"Opens in a new window\">Esty shop</a> "
       }
       },
       {
@@ -73,7 +75,9 @@ map.addLayer({
         },
       "properties": {
         "title": "Vintage Strings",
-        "icon": "convenience"
+        "icon": "convenience",
+          "description":"Restored second hand instruments. See more about the store on their <a href=\"https://www.vintagestrings.co.uk/\" target=\"_blank\" title=\"Opens in a new window\">website</a>"
+       
       }
     }
     ]
@@ -90,6 +94,20 @@ map.addLayer({
     "text-anchor": "top"
   }
 });
+});
+map.on('click', 'points', function (e) {
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.description;
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+new mapboxgl.Popup()
+.setLngLat(coordinates)
+.setHTML(description)
+.addTo(map);
 });
 
 
