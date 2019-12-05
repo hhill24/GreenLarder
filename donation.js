@@ -50,7 +50,7 @@ map.addLayer({
         "properties": {
         "title": "Tayside Reusers",
         "icon": "convenience",
-          "description":"Recycling centre for donated furniture and other goods."
+          "description":"Recycling centre for donated furniture and other goods. See more about the centre on their <a href=\"http://taysidereusers.co.uk/shop/\" target=\"_blank\" title=\"Opens in a new window\">website</a>"
         }
       },
       {
@@ -76,7 +76,7 @@ map.addLayer({
       "properties": {
         "title": "Oxfam Books & Music",
         "icon": "convenience",
-          "description":"Charity shop selling books and music. "
+          "description":"Charity shop selling books and music. See more about the charity on their <a href=\"https://www.oxfam.org.uk/shop/local-shops/oxfam-shop-dundee\" target=\"_blank\" title=\"Opens in a new window\">website</a>" 
       }
     },
     {
@@ -89,7 +89,7 @@ map.addLayer({
       "properties": {
         "title": "Cex",
         "icon": "convenience",
-          "description":"Second hand technology and games."
+          "description":"Second hand technology and games. See more about the store on their <a href=\"https://uk.webuy.com/site/storeDetail/?branchId=198\" target=\"_blank\" title=\"Opens in a new window\">website</a>"
       }
     },
     {
@@ -102,7 +102,7 @@ map.addLayer({
       "properties": {
         "title": "CHSS",
         "icon": "convenience",
-          "description":"Charity shop with a wide selection of clothes."
+          "description":"Charity shop with a wide selection of clothes. See more about the charity on their <a href=\"https://www.chss.org.uk/us/\" target=\"_blank\" title=\"Opens in a new window\">website</a>"
       }
     }
     ]
