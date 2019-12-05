@@ -63,7 +63,7 @@ map.addLayer({
       "properties": {
         "title": "Shelter",
         "icon": "convenience",
-         "description":"Charity shop on Perth Road. See more about the charity on their <a href=\"https://scotland.shelter.org.uk/get_involved/campaigning" target=\"_blank\" title=\"Opens in a new window\">website</a>"
+         "description":"Charity shop on Perth Road. See more about the charity on their <a href=\"https://scotland.shelter.org.uk/get_involved/campaigning\" target=\"_blank\" title=\"Opens in a new window\">website</a>"
       }
       },
       {
