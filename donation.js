@@ -49,7 +49,8 @@ map.addLayer({
         },
         "properties": {
         "title": "Tayside Reusers",
-        "icon": "convenience"
+        "icon": "convenience",
+          "description":"Recycling centre for donated furniture and other goods. See more about the centre on their <a href=\"http://taysidereusers.co.uk/shop/\" target=\"_blank\" title=\"Opens in a new window\">website</a>"
         }
       },
       {
@@ -61,7 +62,8 @@ map.addLayer({
         },
       "properties": {
         "title": "Shelter",
-        "icon": "cafe"
+        "icon": "convenience",
+         "description":"Charity shop on Perth Road. See more about the charity on their <a href=\"https://scotland.shelter.org.uk/get_involved/campaigning\" target=\"_blank\" title=\"Opens in a new window\">website</a>"
       }
       },
       {
@@ -73,7 +75,8 @@ map.addLayer({
         },
       "properties": {
         "title": "Oxfam Books & Music",
-        "icon": "convenience"
+        "icon": "convenience",
+          "description":"Charity shop selling books and music. See more about the charity on their <a href=\"https://www.oxfam.org.uk/shop/local-shops/oxfam-shop-dundee\" target=\"_blank\" title=\"Opens in a new window\">website</a>" 
       }
     },
     {
@@ -85,7 +88,8 @@ map.addLayer({
         },
       "properties": {
         "title": "Cex",
-        "icon": "convenience"
+        "icon": "convenience",
+          "description":"Second hand technology and games. See more about the store on their <a href=\"https://uk.webuy.com/site/storeDetail/?branchId=198\" target=\"_blank\" title=\"Opens in a new window\">website</a>"
       }
     },
     {
@@ -97,7 +101,8 @@ map.addLayer({
         },
       "properties": {
         "title": "CHSS",
-        "icon": "convenience"
+        "icon": "convenience",
+          "description":"Charity shop with a wide selection of clothes. See more about the charity on their <a href=\"https://www.chss.org.uk/us/\" target=\"_blank\" title=\"Opens in a new window\">website</a>"
       }
     }
     ]
@@ -116,6 +121,20 @@ map.addLayer({
 });
 });
 
+map.on('click', 'points', function (e) {
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.description;
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+new mapboxgl.Popup()
+.setLngLat(coordinates)
+.setHTML(description)
+.addTo(map);
+});
 
 
 
