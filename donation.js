@@ -49,7 +49,8 @@ map.addLayer({
         },
         "properties": {
         "title": "Tayside Reusers",
-        "icon": "convenience"
+        "icon": "convenience",
+          "description":"Recycling centre for donated furniture and other goods."
         }
       },
       {
@@ -61,7 +62,8 @@ map.addLayer({
         },
       "properties": {
         "title": "Shelter",
-        "icon": "cafe"
+        "icon": "convenience",
+         "description":"Charity shop on Perth Road. See more about the charity on their <a href=\"https://scotland.shelter.org.uk/get_involved/campaigning" target=\"_blank\" title=\"Opens in a new window\">website</a>"
       }
       },
       {
@@ -73,7 +75,8 @@ map.addLayer({
         },
       "properties": {
         "title": "Oxfam Books & Music",
-        "icon": "convenience"
+        "icon": "convenience",
+          "description":"Charity shop selling books and music. "
       }
     },
     {
@@ -85,7 +88,8 @@ map.addLayer({
         },
       "properties": {
         "title": "Cex",
-        "icon": "convenience"
+        "icon": "convenience",
+          "description":"Second hand technology and games."
       }
     },
     {
@@ -97,7 +101,8 @@ map.addLayer({
         },
       "properties": {
         "title": "CHSS",
-        "icon": "convenience"
+        "icon": "convenience",
+          "description":"Charity shop with a wide selection of clothes."
       }
     }
     ]
