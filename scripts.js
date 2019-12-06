@@ -183,7 +183,8 @@ map.addLayer({
   }
 });
 });
- map.on('click', 'points', function (e) {
+
+map.on('click', 'points', function (e) {
 var coordinates = e.features[0].geometry.coordinates.slice();
 var description = e.features[0].properties.description;
 // Ensure that if the map is zoomed out such that multiple
@@ -197,7 +198,6 @@ new mapboxgl.Popup()
 .setHTML(description)
 .addTo(map);
 });
-
 
 // This changes the quote and the person who wrote that quote every ten seconds
 // The different qutoes and people names are stored in two different arrays
