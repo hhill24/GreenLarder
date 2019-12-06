@@ -53,7 +53,7 @@ map.addLayer({
           "description":"Zero waste food shopping. See more about the store on their <a href=\"http://thelittlegreenblogger.com/index.php/2019/10/04/the-little-green-larder-how-it-works/?fbclid=IwAR3Wo-avqHtOMz_LAiANyWf_NiS6e97JtcGAo8DtxYflfypR7dqaq2RvCpM\" target=\"_blank\" title=\"Opens in a new window\">blog</a>"
       }
           
-        }
+        
       },
       {
       // feature for Mapbox SF
