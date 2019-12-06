@@ -174,6 +174,45 @@ header .overlay {
    width: 96%;
 }
 
+#recipe{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 96%;
+
+}
+
+#image{
+  height: 500px;
+  max-height: 600px;
+}
+
+#more{
+  display: none;
+}
+
+#more2{
+  display: none;
+}
+
+#more3{
+  display: none;
+}
+
+#more4{
+  display::none;
+}
+
+#more5
+{
+  display:none;
+}
+
+#more6{
+  display:none;
+}
+
+
 /* deals witht the text within content */
 .content-text{
   margin-top: 25px;
@@ -192,6 +231,19 @@ header .overlay {
   text-align: left;
   font-size: 28px;
 }
+
+.content-text form{
+  margin: 0 auto;
+  width:700px;
+}
+
+.content-text li
+{
+  text-align: left;
+  font-size: 16px;
+}
+
+
 
 /* aligns text to be centered when the screen size is small */
 @media only screen and (max-width: 650px) {
