@@ -206,10 +206,15 @@ header .overlay {
   font-size: 28px;
 }
 
+.content-text form{
+  margin: 0 auto;
+  width:400px;
+}
+
 .content-text li
 {
   text-align: left;
-  font-size: 28px;
+  font-size: 16px;
 }
 
 /* aligns text to be centered when the screen size is small */
