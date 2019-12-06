@@ -303,6 +303,41 @@ header .overlay {
   opacity: 90%;
   border-radius: 25px;
 }
+
+/* deals with the about page text areas */
+#about-content{
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 28px;
+}
+
+/* deals with the about page text areas */
+#about-content h1{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* deals with the about page image areas */
+#about-image{
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/* deals with the about page image areas */
+#about-image img{
+  height: 300px;
+  width: 98%;
+}
+
+/* deals with the about page image areas */
+#about-image .card{
+  height: 300px;
+  width: 98%;
+  margin-bottom: 15px;
+}
+
 /* END OF MAIN CONTENT CSS */
 
 /* FOOTER CSS */
