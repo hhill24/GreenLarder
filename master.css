@@ -176,15 +176,18 @@ header .overlay {
 
 #recipe{
   float:left;
-  top: 0;
-  bottom: 0;
-  width: 96%;
-  display: inline-block;
+  height:500px; 
+  width:450px;
 }
 
 #image{
-  height: 500px;
+  height: 100px;
   max-height: 600px;
+  width:100px;
+}
+
+#more{
+  display: none;
 }
 
 /* deals witht the text within content */
@@ -208,7 +211,7 @@ header .overlay {
 
 .content-text form{
   margin: 0 auto;
-  width:400px;
+  width:700px;
 }
 
 .content-text li
@@ -216,6 +219,8 @@ header .overlay {
   text-align: left;
   font-size: 16px;
 }
+
+
 
 /* aligns text to be centered when the screen size is small */
 @media only screen and (max-width: 650px) {
