@@ -175,20 +175,43 @@ header .overlay {
 }
 
 #recipe{
-  float:left;
-  height:500px;
-  width:450px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 96%;
+
 }
 
 #image{
-  height: 100px;
+  height: 500px;
   max-height: 600px;
-  width:100px;
 }
 
 #more{
   display: none;
 }
+
+#more2{
+  display: none;
+}
+
+#more3{
+  display: none;
+}
+
+#more4{
+  display::none;
+}
+
+#more5
+{
+  display:none;
+}
+
+#more6{
+  display:none;
+}
+
 
 /* deals witht the text within content */
 .content-text{
