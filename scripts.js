@@ -49,7 +49,10 @@ map.addLayer({
         },
         "properties": {
         "title": "Little Green Larder",
-        "icon": "convenience"
+        "icon": "convenience",
+          "description":"Zero waste food shopping. See more about the store on their <a href=\"http://thelittlegreenblogger.com/index.php/2019/10/04/the-little-green-larder-how-it-works/?fbclid=IwAR3Wo-avqHtOMz_LAiANyWf_NiS6e97JtcGAo8DtxYflfypR7dqaq2RvCpM\" target=\"_blank\" title=\"Opens in a new window\">blog</a>"
+      }
+          
         }
       },
       {
@@ -61,7 +64,9 @@ map.addLayer({
         },
       "properties": {
         "title": "Birchwood Food Emporium",
-        "icon": "cafe"
+        "icon": "cafe",
+          "description":"Zero waste food shopping and cafe. See more about the store on this <a href=\"http://www.vegandundee.co.uk/2019/06/birchwood-emporium-zero-waste-shop.html\" target=\"_blank\" title=\"Opens in a new window\">website</a>"
+     
       }
       },
       {
@@ -73,7 +78,9 @@ map.addLayer({
         },
       "properties": {
         "title": "British Heart Foundation",
-        "icon": "convenience"
+        "icon": "convenience",
+          "description":"BHF Charity Shop. See more about the charity on their <a href=\"http://www.vegandundee.co.uk/2019/06/birchwood-emporium-zero-waste-shop.html\" target=\"_blank\" title=\"Opens in a new window\">website</a>"
+     
       }
     },
     {
@@ -85,7 +92,9 @@ map.addLayer({
         },
       "properties": {
         "title": "Cex",
-        "icon": "convenience"
+        "icon": "convenience",
+        "description":"Second hand technology and games. See more about the store on their <a href=\"https://uk.webuy.com/site/storeDetail/?branchId=198\" target=\"_blank\" title=\"Opens in a new window\">website</a>"
+             
       }
     },
     {
@@ -97,7 +106,10 @@ map.addLayer({
         },
       "properties": {
         "title": "SCRAPantics",
-        "icon": "convenience"
+        "icon": "convenience",
+        "description":"Recycling industry excess into art materials. See more about the store on their <a href=\"http://scrapantics.co.uk/\" target=\"_blank\" title=\"Opens in a new window\">website</a>"
+                  
+             
       }
     },
     {
@@ -109,7 +121,9 @@ map.addLayer({
         },
       "properties": {
         "title": "BrewDog Dundee",
-        "icon": "cafe"
+        "icon": "cafe",
+        "description":"Environmentally conscious bar with fully recycled and recyclable aluminium cans and glass bottles, and our key kegs are also made from recycled material. See more about the company on their <a href=\"https://www.brewdog.com/uk/beers/how-we-brew\" target=\"_blank\" title=\"Opens in a new window\">website</a>"
+
       }
       },
       {
@@ -121,7 +135,9 @@ map.addLayer({
           },
         "properties": {
           "title": "Sense Scotland",
-          "icon": "convenience"
+          "icon": "convenience",
+        "description":" Sense Scotland Charity Shop. See more about the charity on their <a href=\"https://www.sensescotland.org.uk/\" target=\"_blank\" title=\"Opens in a new window\">website</a>"
+
         }
         },
         {
@@ -133,7 +149,11 @@ map.addLayer({
             },
           "properties": {
             "title": "Transform Furniture Store",
-            "icon": "convenience"
+            "icon": "convenience",
+         "description":"Providing quality reusable furniture and electrical household items. See more about the store on their <a href=\"https://www.transformfurniture.co.uk/about\" target=\"_blank\" title=\"Opens in a new window\">website</a>"
+
+             
+             
           }
           },
           {
@@ -145,7 +165,8 @@ map.addLayer({
               },
             "properties": {
               "title": "Tayside Re-User",
-              "icon": "convenience"
+              "icon": "convenience",
+             "description":"Recycling centre for donated furniture and other goods. See more about the centre on their <a href=\"http://taysidereusers.co.uk/shop/\" target=\"_blank\" title=\"Opens in a new window\">website</a>"
             }
             }]
     }
@@ -161,6 +182,20 @@ map.addLayer({
     "text-anchor": "top"
   }
 });
+});
+ map.on('click', 'points', function (e) {
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.description;
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+new mapboxgl.Popup()
+.setLngLat(coordinates)
+.setHTML(description)
+.addTo(map);
 });
 
 
