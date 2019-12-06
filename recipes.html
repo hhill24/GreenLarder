@@ -126,17 +126,18 @@
         <div class="container-fluid" id="first-content">
             <div class="row">
                 <div class="col-sm-4" id="image">
-                    <div class="recipe"><img src="images\spice mix.jpg" alt="spice mix for potatoes"> </div>
+                    <div class="recipe"><img src="images\spice mix.jpg" alt="spice mix for potatoes" height="500" width="450"> </div>
                     </div>
                   <div class="col-sm-8">
                       <div class="content-text">
-                          <h1>Spice mix for fried potato</h1>
+                          <h1 id="potatoes">Spice mix for fried potato</h1>
                           <P>We use this seasoning mix on French fries, homefries, fried potatoes, and we even add it to flour to season fried chicken and pork chops.Feel free to adjust the salt amount to your liking/dietary preference. For french fries, sprinkle some on as soon as you take the fries out of the deep fryer. For homefries or fried potatoes, sprinkle some on during cooking. What would/do you use it on?</P>
-                          <span id="dots">"show more"
+                          <span id="dots">
                           </span>
+                          <span id="more">
                           <li>
                             <ul>1- Tablespoon of paprika</ul>
-                            <span id="more">
+
                             <ul>1- Tablespoon of kosher salt, ground</ul>
                             <ul>1- Tablespoon of garlic powder</ul>
                             <ul>1/2- Tablespoon of onion powder</ul>
@@ -152,7 +153,7 @@
 
                           </span>
                           <button onclick="myFunction()" id="myBtn">Read more</button>
-                          <button onclick="makeList">Save ingredient list</button>
+                          <button onclick="makeList()">Save ingredient list</button>
                     </div>
               </div>
         </div>
@@ -161,13 +162,16 @@
   <div class="container-fluid" id="first-content">
       <div class="row">
           <div class="col-sm-4" id="image">
-              <div class="recipe"><img src="images\cinnamonmix.jpg" alt="Cinnamon pancakes"> </div>
+              <div class="recipe"><img src="images\cinnamonmix.jpg" alt="Cinnamon pancakes" height="500" width="450"> </div>
               </div>
             <div class="col-sm-8">
                 <div class="content-text">
-                    <h1>Cinnamon Pancakes</h1>
+                    <h1 id="Pancakes">Cinnamon Pancakes</h1>
                     <P>Cinnamon pancakes are a great start to a day. The smell of cinnamon permiates the air as these fry up. Yum.</P>
                     <h3>Ingredients needed</h3>
+                    <span id="dots">
+                    </span>
+                    <span id="more">
                     <li>
                       <ul>3 cups of flour</ul>
                       <ul>2 tablespoons of Sugar</ul>
@@ -181,7 +185,9 @@
                     <ol>2. Store in a cool, dry place up to 6 months before using. Use the following recipe when you are ready to make pancakes, or copy it onto a recipe card and attach it to your decorated jar to give as a gift</ol>
                     <ol>3. In a medium bowl, combine 3/4 cup Milk, 1 Egg and 2 Tbsp. Vegetable Oil. With a wire whisk, blend in 1-1/3 cups Pancake Mix until moistened but still lumpy. Cook on a lightly greased griddle or skillet. Makes about 10- 5 inch pancakes</ol>
                   </li>
-                    <button onclick="makeList">Save ingredient list</button>
+                </span>
+                <button onclick="myFunction()" id="myBtn">Read more</button>
+                <button onclick="makeList">Save ingredient list</button>
               </div>
         </div>
   </div>
@@ -190,12 +196,16 @@
 <div class="container-fluid" id="first-content">
     <div class="row">
         <div class="col-sm-4" id="image">
-            <div class="recipe"><img src="images\CinniBun.jpg" alt="Cinnamon Bun"> </div>
+            <div class="recipe"><img src="images\CinniBun.jpg" alt="Cinnamon Bun" height="500" width="450"> </div>
             </div>
           <div class="col-sm-8">
               <div class="content-text">
-                  <h1>Cinnamon Roll Bunnies</h1>
+                  <h1 id="CRbunnies">Cinnamon Roll Bunnies</h1>
                   <P>Turn refrigerated cinnamon roll dough into adorable bunnies. These sweet treats are perfect for Easter brunches and baby showers</P>
+                  <h3>Ingredients</h3>
+                  <span id="dots">
+                  </span>
+                  <span id="more">
                   <li>
                     <ul>16 ounce package cinnamon roll dough with glaze </ul>
                     <ul>5 raisins</ul>
@@ -213,7 +223,9 @@
 
                   <ol>Spread the glaze onto the warm "bunnies", following the pattern of the swirls and ears. Press a raisin in the the center of the swirl on the head to form the "eyes".</ol>
                 </li>
-                  <button onclick="MakeList">Save ingredient list</button>
+              </span>
+              <button onclick="myFunction()" id="myBtn">Read more</button>
+              <button onclick="MakeList">Save ingredient list</button>
             </div>
       </div>
 </div>
@@ -222,13 +234,18 @@
 <div class="container-fluid" id="first-content">
     <div class="row">
         <div class="col-sm-4" id="image">
-            <div class="recipe"><img src="images\goldendrink.jpg" alt="Cinnamon pancakes"> </div>
+            <div class="recipe"><img src="images\goldendrink.jpg" alt="Cinnamon pancakes" height="500" width="450">
             </div>
+
+        </div>
           <div class="col-sm-8">
               <div class="content-text">
-                  <h1>Golden Drink</h1>
+                  <h1 id="GoldenDrink">Golden Drink</h1>
                   <P>Brilliantly coloured, Pineapple and Papaya juice is made by combining two very unusual fruits. The enchanting colour compliments the glorious taste of pineapple and papaya</P>
                   <h3>Ingredients needed</h3>
+                  <span id="dots">
+                  </span>
+                  <span id="more">
                   <li>
                     <ul>1 1/2 cups pineapple cubes</ul>
                     <ul>1 1/2 cups of papaya cubes(deseeded)</ul>
@@ -240,6 +257,8 @@
                   <ol>Add some crushed ice in 2 individual glasses and pour equal quantities of the juice over it </ol>
                   <ol>Serve Immediately</ol>
                 </li>
+              </span>
+                <button onclick="myFunction()" id="myBtn">Read more</button>
                   <button onclick="makeList">Save ingredient list</button>
             </div>
       </div>
@@ -248,15 +267,18 @@
 <div class="container-fluid" id="first-content">
     <div class="row">
         <div class="col-sm-4" id="image">
-            <div class="recipe"><img src="images\datecreamer.jpg" alt="Cinnamon pancakes"> </div>
+            <div class="recipe"><img src="images\datecreamer.jpg" alt="Cinnamon pancakes" height="500" width="450"> </div>
             </div>
           <div class="col-sm-8">
               <div class="content-text">
-                  <h1>Cashew & Date Coffee Creamer</h1>
+                  <h1 id="CofeeCreamer">Cashew & Date Coffee Creamer</h1>
                   <P>This coffee creamer taste luxuriously rich and sweet, but is made from ultra healthy ingredients like cashews an dates! Easy to make!</P>
                   <h3>Ingredients needed</h3>
+                  <span id="dots">
+                  </span>
+                  <span id="more"
                   <li>
-                    <ul>1/2 cup cashewsr</ul>
+                    <ul>1/2 cup cashews</ul>
                     <ul>4 pitted medjool dates</ul>
                     <ul>1.5 cups of water</ul>
                     <ul>1 pinch salt</ul>
@@ -267,7 +289,9 @@
                   <ol>Pour out water, add soaked cashews and dates with 1/2 cup fresh water to blender. Add 1/8tsp salt (just a pinch) and stevia drops if desired.</ol>
                   <ol>Blend for one minute on high until creamy. Chill in fridge overnight for best results. Good for 5-7 days in an airtight container in the refrigerator.</ol>
                 </li>
-                  <button onclick="makeList">Save ingredient list</button>
+              </span>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+            <button onclick="makeList">Save ingredient list</button>
             </div>
 
       </div>
@@ -276,22 +300,27 @@
 <div class="container-fluid" id="first-content">
     <div class="row">
         <div class="col-sm-4" id="image">
-            <div class="recipe"><img src="images\quinoa.jpg" alt="Quinoa"> </div>
+            <div class="recipe"><img src="images\quinoa.jpg" alt="Quinoa" height="500" width="450"> </div>
             </div>
           <div class="col-sm-8">
               <div class="content-text">
-                  <h1>Quinoa</h1>
+                  <h1 id="Quinoa">Quinoa</h1>
                   <P>Although a newcomer to the U.S. market, Quinoa was actually domesticated 3,000 to 4, 000 years ago in the Andrean region in South America (Ecuador, Bolivia, Colombia, Peru). Quinoa is known as an ancient grain, although it is actually a seed, and is related to spinach, Swiss chard and beets</P>
+                  <span id="dots">
+                  </span>
+                  <span id="more"
                   <h3>Ingredients needed</h3>
                   <li>
                     <ul>1 cup of quinoa</ul>
-                    <ul>2 cups of waterr</ul>
+                    <ul>2 cups of water</ul>
                   </li>
                   <h3>Directions</h3>
                   <li>
                   <ol>Place quinoa in a bowl and swish around with your hands; drain; repeat 2 more times. Place rinsed and drained quinoa in a small saucepan. Add water. Cover and bring to a boil; reduce heat to low and cook for 15 minutes. Turn heat off and let sit, covered, for another 5 minutes. Remove cover and fluff with a spoon.</ol>
                 </li>
-                  <button onclick="makeList">Save ingredient list</button>
+              </span>
+            <button onclick="makeList">Save ingredient list</button>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
             </div>
       </div>
 </div>
