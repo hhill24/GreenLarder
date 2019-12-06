@@ -185,6 +185,8 @@ header .overlay {
 #image{
   height: 500px;
   max-height: 600px;
+  margin: 10px;
+  padding: 10;
 }
 
 #more{
@@ -213,6 +215,8 @@ header .overlay {
 }
 
 
+
+
 /* deals witht the text within content */
 .content-text{
   margin-top: 25px;
@@ -237,9 +241,14 @@ header .overlay {
   width:700px;
 }
 
+
+.content-text h3
+{
+  text-align: center;
+}
 .content-text li
 {
-  text-align: left;
+  text-align: center;
   font-size: 16px;
 }
 
